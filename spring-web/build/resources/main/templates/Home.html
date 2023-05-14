@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+  <h1>Programmers Data</h1>
+  <h2 th:text="${msg}"></h2>
+
+  <form action="addProgrammer" method="post">
+      <label for="pId">Product ID:</label>
+      <input type="text" id="pId" name="pId"><br><br>
+
+      <label for="pName">Product Name:</label>
+      <input type="text" id="pName" name="pName"><br><br>
+
+      <label for="pLang">Product Language:</label>
+      <input type="text" id="pLang" name="pLang"><br><br>
+
+      <button type="submit">Add Programmer</button>
+  </form>
+
+
+
+</body>
+</html>
